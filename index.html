@@ -224,14 +224,14 @@
   </div>
 
   <!-- Botón de WhatsApp -->
-  <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn bg-green-500 text-white p-4 rounded-full shadow-lg">
+  <a href="https://wa.me/+51956905759" target="_blank" class="whatsapp-btn bg-green-500 text-white p-4 rounded-full shadow-lg">
     <i class="fab fa-whatsapp text-2xl"></i>
   </a>
 
   <!-- Pie de página -->
   <footer id="contacto" class="gradient-header text-white py-10">
     <div class="container mx-auto px-4 text-center">
-      <p class="text-lg md:text-xl">Contáctanos: <a href="mailto:info@lacasadelarte.com" class="underline">info@lacasadelarte.com</a> | +123 456 789</p>
+      <p class="text-lg md:text-xl">Contáctanos: <a href="mailto:casadelarte392@gmail.com" class="underline">casadelarte392@gmail.com</a> | +51 956 905 759</p>
       <p class="mt-2">© 2025 La Casa del Arte. Todos los derechos reservados.</p>
     </div>
   </footer>
@@ -281,6 +281,14 @@
       { imagen: "imagenes/banner_ambiente1.jpg" },
       { imagen: "imagenes/banner_ambiente2.jpg" }
     ];
+    // Alternativa con URLs externas para probar (descomentar si las imágenes locales no funcionan):
+    /*
+    const bannerData = [
+      { imagen: "https://picsum.photos/1200/400?random=1" },
+      { imagen: "https://picsum.photos/1200/400?random=2" },
+      { imagen: "https://picsum.photos/1200/400?random=3" }
+    ];
+    */
 
     const carouselData = [
       { imagen: mesas[0].imagen, texto: "Mesa Clásica: Elegancia y funcionalidad para tus diseños" },
@@ -333,7 +341,7 @@
       };
       img.onerror = () => {
         console.error(`Error al cargar imagen de banner: ${bannerImage}. Usando imagen de respaldo.`);
-        parallaxContainer.style.backgroundImage = `url('https://picsum.photos/1200/400?random=${currentSlide}')`;
+        parallaxContainer.style.backgroundImage = `url('https://picsum.photos/1200/400?random=${currentSlide + 1}')`;
       };
 
       // Actualizar carrusel de productos
